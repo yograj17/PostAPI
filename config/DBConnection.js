@@ -2,7 +2,9 @@ const mongoose = require("mongoose");
 
 const DBconnection = () => {
   mongoose
-    .connect("mongodb://localhost:27017/PostUploading")
+    .connect(
+      "mongodb+srv://yograjpatil777:32Or0JYgEytWrCBs@yograj.qlguo.mongodb.net/PostUploading"
+    )
     .then(() => {
       console.log("DB Connected");
     })
